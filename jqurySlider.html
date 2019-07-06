@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <meta name="description" content="3D Thumbnail Hover Effects" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+		<script type="text/javascript" src="js/modernizr.custom.69142.js"></script> 
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/set1.css" />
+</head>
+<body>
+        
+<div class="slideShow">
+  <img data-src="1.jpg"></img>
+  <img data-src="2.jpg"></img>
+  <img data-src="3.jpg"></img>
+</div>
+
+<!-- /////////////////// -->
+<!-- <div class="container">
+  <h1>Top right corner, click it!</h1>
+  <p>View type 2 <a href="https://codepen.io/PaulVanO/pen/GgGeyE" target="_blank">here</a></p>
+</div> -->
+
+<div class="button_container" id="toggle">
+  <span class="top"></span>
+  <span class="middle"></span>
+  <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+  <nav class="overlay-menu">
+    <ul>
+      <li ><a href="#">Weddings</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="main1">
+  <h2>Our Works</h2>
+  <br>
+  <p>Our portfolio is the best way to show our work, you can see here a big range of our work.<br> Check them all and you will find what you are looking for.</p>
+  
+          <div id="grid" class="main">
+      <div class="view">
+        <div class="view-back">
+          <span data-icon="A">566</span>
+          <span data-icon="B">124</span>
+          <a href="#">&rarr;</a>
+        </div>
+        <img src="images/4-1.jpg" />
+      </div>
+      <div class="view">
+        <div class="view-back">
+          <span data-icon="A">210</span>
+          <span data-icon="B">102</span>
+          <a href="#">&rarr;</a>
+        </div>
+        <img src="images/5-1.jpg" />
+      </div>
+      <div class="view">
+        <div class="view-back">
+          <span data-icon="A">690</span>
+          <span data-icon="B">361</span>
+          <a href="#">&rarr;</a>
+        </div>
+        <img src="images/6-1.jpg" />
+      </div>
+      <div class="view">
+        <div class="view-back">
+          <span data-icon="A">987</span>
+          <span data-icon="B">130</span>
+          <a href="#">&rarr;</a>
+        </div>
+        <img src="images/7-1.jpg" />
+      </div>
+    </div>
+      
+</div>
+<div class="final">
+   
+  <div class="grid">
+    
+    <figure class="effect-layla">
+      <img src="images/Qk8ngy.jpg" alt="img06"/>
+      <figcaption>
+        <h2>Crazy <span>Layla</span></h2>
+        <p>When Layla appears, she brings an eternal summer along.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+    
+    
+    <figure class="effect-layla">
+      <img src="images/cZl8Jco.jpg" alt="img03"/>
+      <figcaption>
+        <h2>Crazy <span>Layla</span></h2>
+        <p>When Layla appears, she brings an eternal summer along.</p>
+        <a href="#">View more</a>
+      </figcaption>			
+    </figure>
+
+    <figure class="effect-layla">
+        <img src="images/flower-bouquet-computer-hd-wallpaper-52251-53960-hd-wallpapers.jpg" alt="img03"/>
+        <figcaption>
+          <h2>Crazy <span>Layla</span></h2>
+          <p>When Layla appears, she brings an eternal summer along.</p>
+          <a href="#">View more</a>
+        </figcaption>			
+      </figure>
+
+      <figure class="effect-layla">
+          <img src="images/pigXqu.jpg" alt="img03"/>
+          <figcaption>
+            <h2>Crazy <span>Layla</span></h2>
+            <p>When Layla appears, she brings an eternal summer along.</p>
+            <a href="#">View more</a>
+          </figcaption>			
+        </figure>
+ 
+  </div>
+</div>
+
+
+<footer>
+  <div class="footer text-center">
+    <p><b>© All Rights Reserved | Design by: <a target="_blank" rel="nofollow noopener" href="//moozthemes.com">Parastu Maleki</a></b></p>
+  </div>
+</footer>
+<script type="text/javascript">	
+			
+  Modernizr.load({
+    test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+    yep : ['http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js','js/jquery.hoverfold.js'],
+    nope: 'css/fallback.css',
+    callback : function( url, result, key ) {
+        
+      if( url === 'js/jquery.hoverfold.js' ) {
+    $( '#grid' ).hoverfold();
+      }
+
+    }
+  });
+    
+</script>
+
+<script>
+  // For Demo purposes only (show hover effect on mobile devices)
+  [].slice.call( document.querySelectorAll('a[href="#"') ).forEach( function(el) {
+    el.addEventListener( 'click', function(ev) { ev.preventDefault(); } );
+  } );
+</script>
+    <script src="main.js"></script>
+</body>
+</html>
